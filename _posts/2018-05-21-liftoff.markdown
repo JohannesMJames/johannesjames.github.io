@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Liftoff of a 190 mg Laser-Powered Aerial Vehicle: The Lightest Wireless Robot to Fly"
+date:   2018-06-18 22:21:59 +00:00
+image: /images/laserfly.png
+categories: research
+author: "Johannes James"
+authors: "<strong>Johannes James</strong>, Vikram Iyer, Yogesh Chukewad, Shyamnath Gollakota, and Sawyer B Fuller"
+venue: "ICRA"
+paper: https://ieeexplore.ieee.org/abstract/document/8460582
+
+---
+This work presents a significant milestone in the achievement of flight autonomy: the first wireless liftoff of a 190 mg aerial vehicle. Our robot is remotely powered using a 976 nm laser and integrates a complete power electronics package weighing a total of 104 mg.
