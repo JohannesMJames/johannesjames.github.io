@@ -10,4 +10,4 @@ venue: "ICRA"
 paper: https://ieeexplore.ieee.org/abstract/document/9561869
 
 ---
-We present a system capable of modulating thrust for the generation of forces and torques required for control of flapping-wing insect sized robots, critically necessary for realizing controlled flight.
+We present a system capable of modulating thrust for the generation of forces and torques required for control of flapping-wing insect sized robots, critically necessary for realizing controlled flight. A repetitive control law is shown to learn the requisite flapping control signals without model inversion or other feedback control.

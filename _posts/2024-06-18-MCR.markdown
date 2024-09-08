@@ -6,8 +6,8 @@ image: /images/MagResFly_and_BLE_Brkout.jpg
 categories: research
 author: "Johannes James"
 authors: "<strong>Johannes James</strong>, Xingyi Shi, Joshua R. Smith, and Sawyer B. Fuller"
-venue: "Hilton Head Workshop 2024"
+venue: "Hilton Head Workshop on Solid-State Sensors, Actuators, and Microsystems"
 #paper: https://ieeexplore.ieee.org/abstract/document/8460582
 
 ---
-This work presents a significant milestone in the achievement of flight autonomy: the first wireless liftoff of a 190 mg aerial vehicle. Our robot is remotely powered using a 976 nm laser and integrates a complete power electronics package weighing a total of 104 mg.
+This work demonstrates wireless power transmission to a flying robot too light to carry batteries by using a technology famously used by Nikola Tesla: magnetically coupled resonators. I used finite element analysis and bespoke optimization to routines and scripted CAD/CAM to create resonant receiver coils which can be carried by the robot and power the wireless robot. 
