@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Magnetically coupled resonators for wireless power transmission to insect sized flapping wing robots"
+date:   2024-06-18 22:21:59 +00:00
+image: /images/MagResFly_and_BLE_Brkout.jpg
+categories: research
+author: "Johannes James"
+authors: "<strong>Johannes James</strong>, Xingyi Shi, Joshua R. Smith, and Sawyer B. Fuller"
+venue: "Hilton Head Workshop 2024"
+#paper: https://ieeexplore.ieee.org/abstract/document/8460582
+
+---
+This work presents a significant milestone in the achievement of flight autonomy: the first wireless liftoff of a 190 mg aerial vehicle. Our robot is remotely powered using a 976 nm laser and integrates a complete power electronics package weighing a total of 104 mg.
