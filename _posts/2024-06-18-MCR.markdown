@@ -10,4 +10,4 @@ venue: "Hilton Head Workshop on Solid-State Sensors, Actuators, and Microsystems
 #paper: https://ieeexplore.ieee.org/abstract/document/8460582
 
 ---
-This work demonstrates wireless power transmission to a flying robot too light to carry batteries by using a technology famously used by Nikola Tesla: magnetically coupled resonators. I used finite element analysis and bespoke optimization to routines and scripted CAD/CAM to create resonant receiver coils which can be carried by the robot and power the wireless robot. 
+This work demonstrates wireless power transmission to a flying robot too light to carry batteries by using a technology famously used by Nikola Tesla: magnetically coupled resonators. I used a custom optimization routine, finite element EM analysis, and scripted CAD/CAM to create resonant receiver coils which can be carried by the robot and power the wireless robot. 
