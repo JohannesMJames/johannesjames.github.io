@@ -2,7 +2,7 @@
 layout: post
 title:  "Liftoff of a 190 mg Laser-Powered Aerial Vehicle: The Lightest Wireless Robot to Fly"
 date:   2018-06-18 22:21:59 +00:00
-image: /images/laserFly.jpg
+image: /images/LaserFlyLabeledLiftoff.png
 categories: research
 author: "Johannes James"
 authors: "<strong>Johannes James</strong>, Vikram Iyer, Yogesh Chukewad, Shyamnath Gollakota, and Sawyer B Fuller"
