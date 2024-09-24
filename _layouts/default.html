@@ -82,42 +82,86 @@
           </tr>
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          {% assign highlighted_post = site.posts | where: "highlight", true | first %}
+          {% if highlighted_post %}
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Highlighted Work</h2>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="{{ highlighted_post.image }}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <h3>{{ highlighted_post.title }}</h3>
+              <br>
+              {{ highlighted_post.authors }}
+              <br>
+              <em>{{ highlighted_post.venue }}</em>, {{ highlighted_post.date | date: "%Y" }}
+              <br>
+              {% if highlighted_post.paper %}
+              <a href="{{ highlighted_post.paper }}">paper</a> /
+              {% endif %}
+              {% if highlighted_post.video %}
+              <a href="{{ highlighted_post.video }}">video</a> /
+              {% endif %}
+              {% if highlighted_post.code %}
+              <a href="{{ highlighted_post.code }}">code</a> /
+              {% endif %}
+              {% if highlighted_post.poster %}
+              <a href="{{ highlighted_post.poster }}">poster</a> /
+              {% endif %}
+              {% if highlighted_post.slides %}
+              <a href="{{ highlighted_post.slides }}">slides</a> /
+              {% endif %}
+              {% if highlighted_post.website %}
+              <a href="{{ highlighted_post.website }}">website</a> /
+              {% endif %}
+              {% if highlighted_post.youtube %}
+              <a href="{{ highlighted_post.youtube }}">youtube</a> /
+              {% endif %}
+              <p></p>
+              {{ highlighted_post.excerpt }}
+            </td>
+          </tr>
+          {% endif %}
 
           {% for post in site.posts %}
+          {% unless post.highlight %}
           {% for cat in post.categories %}
           {% if cat == 'research' %}
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              <img src="{{ post.image }}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
+              <h3>{{ post.title }}</h3>
               <br>
-              {{post.authors}}
-
+              {{ post.authors }}
               <br>
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+              <em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}
               <br>
               {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
+              <a href="{{ post.paper }}">paper</a> /
               {% endif %}
               {% if post.video %}
-              <a href="{{post.video}}">video</a> /
+              <a href="{{ post.video }}">video</a> /
               {% endif %}
               {% if post.code %}
-              <a href="{{post.code}}">code</a> /
+              <a href="{{ post.code }}">code</a> /
               {% endif %}
               {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
+              <a href="{{ post.poster }}">poster</a> /
               {% endif %}
               {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
+              <a href="{{ post.slides }}">slides</a> /
               {% endif %}
               {% if post.website %}
-              <a href="{{post.website}}">website</a> /
+              <a href="{{ post.website }}">website</a> /
               {% endif %}
               {% if post.youtube %}
-              <a href="{{post.youtube}}">youtube</a> /
+              <a href="{{ post.youtube }}">youtube</a> /
               {% endif %}
               <p></p>
               {{ post.excerpt }}
@@ -125,6 +169,7 @@
           </tr>
           {% endif %}
           {% endfor %}
+          {% endunless %}
           {% endfor %}
         </table>
         <br>
