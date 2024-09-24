@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "RoboFly: An insect-sized robot with simplified fabrication that is capable of flight, ground, and water surface locomotion"
+date:   2021-05-31 22:21:59 +00:00
+image: /images/jesusFlyWtr.jpg
+categories: research
+author: "Johannes James"
+authors: "Yogesh M Chukewad, <strong>Johannes James</strong>, Avinash Singh, Sawyer Fuller"
+venue: "IEEE Transactions on Robotics, Volume 5, No. 44"
+#paper: https://ieeexplore.ieee.org/abstract/document/9444546/
+
+---
+This work shows some of Yogesh Chukewad's contributions to the robot control by demonstrating robot locomotion on the ground and on the water surface, significantly expanding the capabilities of the robot and leveraging its small size to vastly increase potential applications. In this work, power measurements were vital to characterize the cost of transport. 

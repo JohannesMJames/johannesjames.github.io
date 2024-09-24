@@ -10,4 +10,4 @@ venue: "Science robotics, Volume 5, No. 44"
 #paper: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5raO77cAAAAJ&citation_for_view=5raO77cAAAAJ:qjMakFHDy7sC
 
 ---
-This work demonstrates superlative technical skill by Vikram Iyer and Ali Najafi in interfacing our UW Robofly piezoelectric actuation and power electronics with a wireless camera system equipped with inertial measurement. The sensor "backpack" was suitable to be carried by a living beetle as well as a vibratory robot, and the camera can be steered by the piezoelectric actuator. Camera steering commands, IMU measurements, and images can be transmitted over wireless link to smartphone.
+This work demonstrates superlative technical skill by Vikram Iyer and Ali Najafi in interfacing my UW Robofly piezoelectric actuator and power electronics with a wireless camera system equipped with inertial measurement. The sensor "backpack" was carried by a living beetle as well as a vibratory robot, and the camera was steered by the piezoelectric actuator. Camera steering commands, IMU measurements, and images can be transmitted over wireless link to smartphone.
