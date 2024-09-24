@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "An insect-sized robot that uses a custom-built onboard camera and a neural network to classify and respond to visual input"
+date:   2018-08-26 22:21:59 +00:00
+image: /images/SivaCamchip2.png
+categories: research
+author: "Johannes James"
+authors: "Sivakumar Balasubramanian, Yogesh M Chukewad, <strong>Johannes James</strong>, Geoffrey L Barrows, Sawyer B Fuller"
+venue: "2018 7th IEEE International Conference on Biomedical Robotics and Biomechatronics (Biorob)"
+#paper: https://ieeexplore.ieee.org/abstract/document/8488007/
+
+---
+This work demonstrates a new, custom-built, low-weight (26 mg) camera mounted on a 74 mg flapping-wing robot. A convolution neural network (CNN) classified images measured by the custom camera in order to determine correct insect robot control actions such as whether to approach reward or instead escape predation.
