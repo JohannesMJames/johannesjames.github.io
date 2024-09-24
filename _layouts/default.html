@@ -85,7 +85,7 @@
           {% assign highlighted_post = site.posts | where: "highlight", true | first %}
           {% if highlighted_post %}
           <tr>
-            <td style="padding:2.5%;width:auto;vertical-align:middle">
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>Highlighted Work</h2>
             </td>
           </tr>
@@ -126,6 +126,13 @@
             </td>
           </tr>
           {% endif %}
+
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>All Publications</h2>
+            </td>
+          </tr>
+          <tr>
 
           {% for post in site.posts %}
           {% unless post.highlight %}
