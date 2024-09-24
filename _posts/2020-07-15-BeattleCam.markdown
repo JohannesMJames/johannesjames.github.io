@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Magnetically coupled resonators for wireless power transmission to insect sized flapping wing robots"
-date:   2024-06-18 22:21:59 +00:00
-image: /images/MagResFly_and_BLE_Brkout.jpg
+title:  "Wireless steerable vision for live insects and insect-scale robots"
+date:   2020-07-15 22:21:59 +00:00
+image: /images/beetleCam.png
 categories: research
 author: "Johannes James"
-authors: "<strong>Johannes James</strong>, Xingyi Shi, Joshua R. Smith, and Sawyer B. Fuller"
-venue: "Hilton Head Workshop on Solid-State Sensors, Actuators, and Microsystems"
-#paper: https://ieeexplore.ieee.org/abstract/document/8460582
+authors: "Vikram Iyer, Ali Najafi, <strong>Johannes James</strong>, Sawyer Fuller, Shyamnath Gollakota"
+venue: "Science robotics, Volume 5, No. 44"
+#paper: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5raO77cAAAAJ&citation_for_view=5raO77cAAAAJ:qjMakFHDy7sC
 
 ---
-This work demonstrates wireless power transmission to a flying robot too light to carry batteries by using a technology similar to the wireless power famously used by Nikola Tesla: magnetically coupled resonators. I used a custom optimization routine, finite element EM analysis, and scripted CAD/CAM to create ultra light-weight resonant receiver coils which can be carried by the insect robot and power the wireless robot. 
+This work demonstrates superlative technical skill by Vikram Iyer and Ali Najafi in interfacing our UW Robofly piezoelectric actuation and power electronics with a wireless camera system equipped with inertial measurement. The sensor "backpack" was suitable to be carried by a living beetle as well as a vibratory robot, and the camera can be steered by the piezoelectric actuator. Camera steering commands, IMU measurements, and images can be transmitted over wireless link to smartphone.
