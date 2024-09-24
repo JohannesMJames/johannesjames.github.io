@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Magnetically coupled resonators for wireless power transmission to insect sized flapping wing robots"
+date:   2024-06-18 22:21:59 +00:00
+image: /images/MagResFly_and_BLE_Brkout.jpg
+categories: research
+author: "Johannes James"
+authors: "<strong>Johannes James</strong>, Xingyi Shi, Joshua R. Smith, and Sawyer B. Fuller"
+venue: "Hilton Head Workshop on Solid-State Sensors, Actuators, and Microsystems"
+#paper: https://ieeexplore.ieee.org/abstract/document/8460582
+
+---
+This work demonstrates wireless power transmission to a flying robot too light to carry batteries by using a technology similar to the wireless power famously used by Nikola Tesla: magnetically coupled resonators. I used a custom optimization routine, finite element EM analysis, and scripted CAD/CAM to create ultra light-weight resonant receiver coils which can be carried by the insect robot and power the wireless robot. 
