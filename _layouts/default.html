@@ -76,37 +76,6 @@
                   </ul>
               </ul>
 
-<!--              <h2>Media Coverage</h2>-->
-<!--              <p>-->
-<!--                My work has garnered attention from some of the most respected media outlets, each showcasing the innovative nature and impact of my research.-->
-<!--              </p>-->
-<!--              <ul>-->
-<!--                <li>-->
-<!--                  <strong><a href="https://www.economist.com/science-and-technology/2018/05/17/the-worlds-lightest-wireless-flying-machine-lifts-off" target="_blank" rel="noreferrer noopener">The Economist</a></strong>: Featured my work as the world's lightest wireless flying machine, emphasizing the unprecedented technological advancements in micro-robotics.-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                  <strong><a href="https://www.wired.com/story/this-insect-sized-flying-robot-is-powered-by-lasers" target="_blank" rel="noreferrer noopener">Wired</a></strong>: Covered the breakthrough of laser-powered insect-sized robots, highlighting how my contributions are reshaping the field of power transmission and robotic flight.-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                  <strong><a href="https://spectrum.ieee.org/automaton/robotics/robotics-hardware/laser-powered-robot-insect-achieves-lift-off" target="_blank" rel="noreferrer noopener">IEEE Spectrum</a></strong>: Focused on the technical mastery of integrating wireless energy systems in insect-scale robots, showcasing my critical role in advancing robotic autonomy.-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                  <strong><a href="https://www.cnbc.com/2018/11/02/about-the-weight-of-a-toothpick-first-wireless-robo-insect-takes-off.html" target="_blank" rel="noreferrer noopener">CNBC</a></strong>: Presented my research to a broad audience, describing the potential applications of my work in areas such as surveillance and environmental monitoring.-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                  <strong><a href="https://techxplore.com/news/2020-01-robofly-insect-sized-robot-drift-surfaces.html" target="_blank" rel="noreferrer noopener">TechXplore</a></strong>: Featured my innovations in the RoboFly platform, focusing on my ability to push the boundaries of micro-robotic capabilities.-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                  <strong><a href="https://www.dailymail.co.uk/sciencetech/article-7943801/Scientists-design-penny-sized-RoboFly-walk-fly-drift-water-surfaces.html" target="_blank" rel="noreferrer noopener">Daily Mail</a></strong>: Highlighted the real-world implications of my insect-sized robots, exploring how they can perform complex tasks such as walking, flying, and even interacting with water surfaces.-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                  <strong><a href="https://www.youtube.com/watch?v=XZKAGEV7bw0&amp;feature=youtu.be" target="_blank" rel="noreferrer noopener">Seeker</a></strong>: Produced a video showcasing my robots' abilities, further amplifying public interest and excitement in this emerging technology.-->
-<!--                </li>-->
-<!--              </ul>-->
-<!--              <p>-->
-<!--                Through these features, my work has been recognized for its forward-thinking approach and potential to revolutionize robotics at the microscale.-->
-<!--              </p>-->
-
 
 
 <!--              <p style="text-align:center">-->
@@ -133,13 +102,8 @@
           </tr>
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          {% assign highlighted_post = site.posts | where: "highlight", true | first %}
-          {% if highlighted_post %}
-          <tr>
-            <td style="padding:2.5%;width:30%;vertical-align:middle">
-              <h2>Highlighted Work</h2>
-            </td>
-          </tr>
+          {% assign highlighted_posts = site.posts | where: "highlight", true %}
+          {% for highlighted_post in highlighted_posts %}
           <tr>
             <td style="padding:2.5%;width:30%;vertical-align:middle;min-width:120px">
               <img src="/tn{{ highlighted_post.image }}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
@@ -151,32 +115,18 @@
               <br>
               <em>{{ highlighted_post.venue }}</em>, {{ highlighted_post.date | date: "%Y" }}
               <br>
-              {% if highlighted_post.paper %}
-              <a href="{{ highlighted_post.paper }}">paper</a> /
-              {% endif %}
-              {% if highlighted_post.video %}
-              <a href="{{ highlighted_post.video }}">video</a> /
-              {% endif %}
-              {% if highlighted_post.code %}
-              <a href="{{ highlighted_post.code }}">code</a> /
-              {% endif %}
-              {% if highlighted_post.poster %}
-              <a href="{{ highlighted_post.poster }}">poster</a> /
-              {% endif %}
-              {% if highlighted_post.slides %}
-              <a href="{{ highlighted_post.slides }}">slides</a> /
-              {% endif %}
-              {% if highlighted_post.website %}
-              <a href="{{ highlighted_post.website }}">website</a> /
-              {% endif %}
-              {% if highlighted_post.youtube %}
-              <a href="{{ highlighted_post.youtube }}">youtube</a> /
-              {% endif %}
+              {% if highlighted_post.paper %}<a href="{{ highlighted_post.paper }}">paper</a> / {% endif %}
+              {% if highlighted_post.video %}<a href="{{ highlighted_post.video }}">video</a> / {% endif %}
+              {% if highlighted_post.code %}<a href="{{ highlighted_post.code }}">code</a> / {% endif %}
+              {% if highlighted_post.poster %}<a href="{{ highlighted_post.poster }}">poster</a> / {% endif %}
+              {% if highlighted_post.slides %}<a href="{{ highlighted_post.slides }}">slides</a> / {% endif %}
+              {% if highlighted_post.website %}<a href="{{ highlighted_post.website }}">website</a> / {% endif %}
+              {% if highlighted_post.youtube %}<a href="{{ highlighted_post.youtube }}">youtube</a> / {% endif %}
               <p></p>
               {{ highlighted_post.excerpt }}
             </td>
           </tr>
-          {% endif %}
+          {% endfor %}
 
           <tr>
             <td style="padding:2.5%;width:30%;vertical-align:middle">
