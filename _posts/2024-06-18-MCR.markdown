@@ -7,6 +7,7 @@ categories: research
 author: "Johannes James"
 authors: "<strong>Johannes James</strong>, Xingyi Shi, Joshua R. Smith, and Sawyer B. Fuller"
 venue: "Hilton Head Workshop on Solid-State Sensors, Actuators, and Microsystems"
+highlight: true
 #paper: https://ieeexplore.ieee.org/abstract/document/8460582
 
 ---
